@@ -27,6 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env*
 
 # vercel
 .vercel
@@ -39,5 +40,6 @@ next-env.d.ts
 /.open-next
 
 # wrangler files
-.wrangler
+.wrangler*
+.wrangler.jsonc
 .dev.vars*
