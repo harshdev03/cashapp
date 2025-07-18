@@ -1,4 +1,4 @@
-import { db } from "@/db/src";
+import { db } from "@/app/db/src";
 import CredentialsProvider from "next-auth/providers/credentials"
 import bcrypt from "bcrypt";
 

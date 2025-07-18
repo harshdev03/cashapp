@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
 const route = useRouter()
   return (
-    <nav className="fixed top-0 z-50 inset-x-0 flex w-full px-10 md:px-6 items-center justify-between bg-[#ffffff]/50 backdrop-blur-2xl border-b border-neutral-200 py-4 dark:border-neutral-800">
+    <nav className="fixed top-0 z-50 inset-x-0 flex w-full px-10 md:px-6 items-center justify-between bg-black/30 backdrop-blur-2xl  py-4 dark:border-neutral-800">
       <div className="flex items-center gap-2">
         <div className="size-7 rounded-full bg-gradient-to-br from-violet-500 to-pink-500" />
         <h1 className="text-base font-bold md:text-2xl">CashApp</h1>

@@ -1,7 +1,7 @@
 "use server"
 import { getServerSession } from "next-auth";
 import { authOptions } from "../auth";
-import { db } from "@/db/src";
+import { db } from "@/app/db/src";
 
 export async function p2pTransfer(to: string, amount: number) {
     const session = await getServerSession(authOptions);
