@@ -13,7 +13,6 @@ import { Label } from "@/components/ui/label"
 import { SelectBank } from "./SelectBank"
 import {useState} from 'react'
 import { createOnRampTransaction } from "@/lib/actions/createOnRampTransaction"
-import { toast } from "sonner"
 
 const SUPPORTED_BANKS = [{
     name: "HDFC Bank",
