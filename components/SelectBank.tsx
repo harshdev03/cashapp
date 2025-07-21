@@ -10,19 +10,31 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-export function SelectBank() {
+export function SelectBank({
+  onSelect,
+  options
+}: {
+  onSelect: (value: string) => void;
+  options: {
+    key: string;
+    value: string;
+  }[];
+}) {
   return (
-    <Select >
-      <SelectTrigger  className="w-[180px]">
-        <SelectValue placeholder="Choose a Bank " />
+    <Select onValueChange={onSelect}>
+      <SelectTrigger className="w-[180px]">
+        <SelectValue placeholder="Choose a Bank" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
           <SelectLabel>Select Banks</SelectLabel>
-          <SelectItem value="hdfcbanks">HDFC BANK</SelectItem>
-          <SelectItem value="axisbanks">AXIS BANK</SelectItem>
+          {options.map((bank) => (
+            <SelectItem key={bank.key} value={bank.value}>
+              {bank.key}
+            </SelectItem>
+          ))}
         </SelectGroup>
       </SelectContent>
     </Select>
-  )
+  );
 }
