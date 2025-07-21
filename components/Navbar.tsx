@@ -4,6 +4,7 @@ import { signIn, signOut, useSession } from 'next-auth/react'
 import React from 'react'
 import { ModeToggle } from './ModeToggle'
 
+
 const Navbar = () => {
   const { data: session } = useSession()
 
@@ -18,12 +19,14 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         <ModeToggle />
         <button
-          className="whitespace-nowrap w-auto px-6 py-2 rounded-lg text-sm md:text-md bg-black font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+          className="whitespace-nowrap cursor-pointer w-auto px-6 py-2 rounded-lg text-sm md:text-md bg-black font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
           onClick={() => {
             if (session?.user) {
               signOut({ callbackUrl: '/' })
+
             } else {
               signIn(undefined, { callbackUrl: '/dashboard' })
+
             }
           }}
         >
