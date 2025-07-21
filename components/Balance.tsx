@@ -37,7 +37,7 @@ export function Balance({amount , locked}:{
               <div className="flex items-center">
                 <Label htmlFor="password">Total Balance</Label>
               </div>
-                    {(locked+amount)/100} INR
+                    {(locked+amount)/100}   INR
             </div>
           </div>
       </CardContent>
