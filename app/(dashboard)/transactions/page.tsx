@@ -23,7 +23,7 @@ async function getOnRampTransactions() {
 const Transactions = async () => {
     const transactions = await getOnRampTransactions();
   return (
-    <div className="w-full px-5 md:px-44 min-h-screen flex flex-col items-center justify-start py-10">
+    <div className="w-full px-8 md:px-44 min-h-screen flex flex-col items-center justify-start py-10">
       <h1 className="mb-6 text-center text-4xl font-extrabold tracking-tight">
         Recent Transactions
       </h1>
