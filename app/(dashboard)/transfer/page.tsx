@@ -45,7 +45,7 @@ const Transfer = async () => {
     const transactions = await getOnRampTransactions();
 
   return (
-    <div className='flex flex-col px-15 md:px-44  items-center p-2'>
+    <div className='flex flex-col px-10 md:px-44  items-center p-2'>
   
     <h1 className="scroll-m-20 mb-3 text-center text-4xl font-extrabold tracking-tight text-balance">
         Transfer
