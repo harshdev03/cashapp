@@ -1,21 +1,23 @@
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { HammerIcon } from "lucide-react";
 
-
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { HammerIcon } from "lucide-react"
-const Dashboard = ()=> {
+const Dashboard = () => {
   return (
-<div className="flex justify-center max-w-md">
-<Alert className="h-30 font-semibold w-100">
-  <HammerIcon className="h-2 w-5"/>
-  <AlertTitle>
-   Work in Progress</AlertTitle>
-  <AlertDescription className="text-[15px]">
-    The Dashboard is under development and will be available soon. <br />
-    You can use all other services over here.!
-  </AlertDescription>
-</Alert>
-</div>   
-  )
-}
+    <div className="flex items-center justify-center w-full px-10 md:px-8">
+      <Alert className="w-full max-w-md bg-muted p-4 rounded-xl shadow-lg">
+        <HammerIcon className="size-5 mt-1 text-primary" />
+        <div>
+          <AlertTitle className="text-lg font-semibold">
+            Work in Progress
+          </AlertTitle>
+          <AlertDescription className="text-[15px] mt-1 leading-relaxed">
+            The Dashboard is under development and will be available soon. <br />
+            You can use all other services over here.!
+          </AlertDescription>
+        </div>
+      </Alert>
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
