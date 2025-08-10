@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Host_Grotesk } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./provider";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes"; 
 
-const font = Host_Grotesk({
-  subsets: ["latin"],
+const roboto = Roboto({
+  weight : ["400" , "700"],
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={`${font.className} antialiased`}>
+      <body className={`${roboto.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
