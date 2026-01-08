@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./provider";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes"; 
 
 const roboto = Roboto({
@@ -31,7 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Providers>
-            <Navbar />
+            {/* <Navbar /> */}
             {children}
           </Providers>
         </ThemeProvider>

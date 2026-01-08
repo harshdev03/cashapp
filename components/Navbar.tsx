@@ -9,7 +9,7 @@ const Navbar = () => {
   const { data: session } = useSession()
 
   return (
-    <nav className="fixed top-0 z-50 inset-x-0 flex w-full px-2  items-center justify-center bg-[#ffffff]  dark:bg-[oklch(0.145_0_0)] backdrop-blur-md    py-4 border-b-white/40 dark:border-b-black">
+    <nav className="fixed top-0 z-50 inset-x-0 flex w-full px-2  items-center justify-center bg-[#ffffff]  dark:bg-[oklch(0.145_0_0)] backdrop-blur-md py-4 border-b-white/40 dark:border-b-black">
  
       <div className='flex max-w-5xl justify-between w-full'>
 
